@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+p, li {
+    color: rgb(131, 131, 131);
+}
+.green{
+    width: 100%;
+    height: 95vh;
+    /* */
+    /*Navegadores web viejos */
+    background: -webkit-linear-gradient(-45deg, rgba(57, 167, 47, 0.459) 50%,  rgba(47, 139, 39, 0.459) 50%), url(img/bg.png);
+    /*Navegadores normales*/
+    background: linear-gradient(-65deg, rgba(57, 167, 47, 0.459) 50%,  rgba(47, 139, 39, 0.459) 50%), url(img/bg.png);
+    /* */
+    background-size: cover
+}
+
+.white{
+    width: 100%;
+    height: 95vh;
+    background-color: white;
+    background-size: cover;
+}
+
+.inicio{
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+
+.header{
+    display: flex;
+    font-family: 'Inclusive Sans', sans-serif;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+.header h1{
+    color: white;
+}
+
+.header nav a{
+    margin-right : 20px;
+}
+
+.header nav a:hover{
+    text-decoration: underline;
+}
+
+.header nav a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.header nav span{
+    color: white;
+}
+
+.header nav a:last-child{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.inicio_info_container{
+    position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.inicio_info_container{
+    position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.inicio_info{
+    display: flexbox;
+    justify-self: end;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.inicio_info h3{
+    color: white;
+    font-weight: 100;
+    font-size: 1.4vw;
+    margin-bottom: 10px;
+}
+
+.inicio_info h1{
+    color: white;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.inicio_info h1 span{
+    color: black;
+    font-size: 4wv;
+    font-weight: lighter;
+}
+
+.inicio_info p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.inicio_info .shopBtn{
+    margin-top: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+
+}
+
+.inicio_info .contactBtn{
+    margin-top: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+
+}
+
+.inicio_img{
+    display: flex;
+    justify-self: start;
+}
+
+.inicio_img img{
+    margin-left: 5vw;
+    width: 29vw;
+    height: 63vh;
+}
+
+
+/* Segunda Seccion*/
+.general{
+    height: 110vh;
+}
+
+.general_boxes_container{
+    width: 60vw;
+    height: 41vh;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.general_boxes{
+    margin: 4.5em 0.5em;
+    padding: 5% 5%;
+    background: linear-gradient(-65deg, rgba(57, 167, 47, 0.459) 50%,  rgba(47, 139, 39, 0.459) 50%)
+}
+.general_boxes_border{
+    display: relative;
+    outline: solid white 3px;
+    padding: 2vw;
+}
+
+.general_boxes p{
+    font-family: 'Inclusive Sans', sans-serif;
+    color: white;
+    font-weight: 5px;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.general_info_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-family: 'Inclusive Sans', sans-serif;
+}
+.general_img{
+    position: relative;
+    left: 18vw;
+}
+.general_img img{
+    width: 29vw;
+    height: 29vw;
+}
+
+.general_info{
+    position: relative;
+    display: flexbox;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+}
+
+.green_title{
+    color: rgba(52, 128, 45, 0.637);
+    font-size: 4wv;
+    font-weight: bold;
+}
+
+.general_info .title2{
+    color: black;
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+.p1{
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.p2{
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.shopBtn2{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: transparent;
+    background-color: rgba(47, 139, 39, 0.555);
+    color: white;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+/* Tercera Seccion */
+
+.deals{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.deals_img img{
+    width: 34vw;
+    height: 65vh;
+    margin-left: 5vw;
+}
+
+.deals_info_container{
+    background-color: white;
+    text-align: center;
+    width: 34vw;
+    height: 65vh;
+    outline: solid rgba(218, 246, 215, 0.459) 2px;
+    outline-offset: -25px;
+    position: relative;
+    right: 120px;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.deals_textoPequeño{
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+}
+
+.deals_titulo{
+    color: black;
+    margin-top: 8px;
+    font-size: 35px;
+    font-weight:900;
+}
+
+.deals_dinero{
+    margin-top: 20px;
+    color: rgba(13, 128, 0, 0.494);
+    font-size: 60px;
+}
+
+.deals_subtitulo{
+    color: black;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 6px;
+}
+
+.deals_subtitulo_subtitulo{
+    color: rgba(0, 0, 0, 0.562);
+}
+
+.deals_info_time{
+    display: flex;
+    font-size: 25px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.deals_info_time p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.349);
+    font-style: italic;
+}
+
+.deals_info_time p::before{
+    content: '-';
+}
+
+.deals_info_time p::after{
+    content: '-';
+}
+
+.deals_info_container button{
+    font-size: 15px;
+    margin-top: 40px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: rgba(13, 128, 0, 0.494);
+    color: white;
+    margin-right: 10px;
+}
+
+/*Cuarta seccion*/
+.benefits{
+    height: 105vh;
+}
+.benefits_title{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 6em;
+    text-align: center;
+    width: 60vw;
+}
+.benefits_title h1{
+    font-size: 3.5vw;
+    font-weight: 100;
+}
+.benefits_info_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+.benefits_info_img img{
+    width: 25vw;
+}
+.benefit{
+    display: grid;
+    grid-template-columns: 7em 20em;
+    padding-left: 5em;
+    margin: 1.6em;
+}
+.benefit_info{
+    text-align: start;
+    gap: 20px;
+}
+.benefit_info p{
+    color: rgb(133, 133, 133);
+}
+.benefit_info hr{
+    border: solid 1.5px #b9e6a58c;
+    width: 70px;
+    margin: 5px 0;
+}
+.benefit_check i{
+    padding: 16px 19.5px;
+    border: solid 1px rgba(170, 170, 170, 0.514);
+    border-radius: 100%;
+}
+
+/* Quinta Seccion */
+
+.use{
+    text-align: center;
+}
+
+.use_title h1{
+    color: black;
+    font-weight: 100;
+    font-size: 45px;
+    padding-top: 80px;
+}
+
+.use_title p{
+    color: white;
+    margin-top: 15px;
+}
+
+.white_title{
+    color: white;
+    font-weight:900;
+}
+
+.use_info_container{
+    display: grid;
+    grid-template-columns: repeat(3, 410px);
+    position: relative;
+    top: 20%;
+    transform: translate(0, -20%);
+    place-content: center;
+}
+
+.use_info{
+    text-align: center;
+    
+}
+
+.use_info i{
+    padding: 30px;
+    border: solid rgba(255, 255, 255, 0.218);
+    border-radius: 100%;
+}
+
+.use_info h2{
+    margin-top: 20px;
+    color: white;
+}
+
+.use_info hr{
+    width: 30%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid rgba(255, 255, 255, 0.17);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.use_info p{
+    color: white;
+}
+
+/* Sexta Sección*/
+.products{
+    height: 125vh;
+}
+.products_title{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 6em;
+    text-align: center;
+    width: 60vw;
+}
+.products_title h1{
+    font-size: 3.5vw;
+    font-weight: 100;
+}
+.products_title p{
+    margin-top: 20px;
+}
+.products_info_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 2em;
+}
+.products_info{
+    display: block;
+    text-align: center;
+    border: solid 1px rgba(170, 170, 170, 0.514);
+    padding: 1em 0;
+}
+.products_info_img{
+    width: 20em;
+}
+.products_info_graph{
+    margin: 10px;
+}
+.products_info_graph img{
+    width: 1.2em;
+    filter: invert(49%) sepia(82%) saturate(258%) hue-rotate(59deg) brightness(93%) contrast(81%);
+}
+.products_info_graph::after{
+    content: "(99)";
+    color: rgb(170, 170, 170);
+}
+.products_info h3{
+    margin: 5px;
+    font-size: 18px;
+}
+.products_info h2{
+    margin: 5px;
+    color: #7ab063;
+}
+
+.products_info button{
+    margin-top: 10px;
+    padding: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: rgb(255, 255, 255);
+    color: #7ab063;
+    margin-right: 10px;
+    border: solid 3px #7ab063;
+}
+
+/* Septima Seccion */
+.customer{
+    text-align: center;
+    height: 105vh;
+}
+
+.customer_title h1{
+    color: black;
+    font-weight: 100;
+    font-size: 45px;
+    padding-top: 80px;
+}
+
+.customer_title p{
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.customer_info_container img{
+    border-radius: 100%;
+    outline: 3px solid rgba(255, 255, 255, 0.222);
+    outline-offset: 5px;
+    margin-bottom: 30px;
+}
+
+.customer_info_description{
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.customer_info_client{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.customer_info_profession{
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.customer_info_numberpage{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.customer_info_numberpage p{
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 100%;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: -5px;
+}
+
+.customer_info_numberpage p:hover{
+    background-color: black;
+}
+
+/*Sección 8*/
+.blog{
+    height: 120vh;
+}
+.blog_title{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 6em;
+    text-align: center;
+    width: 60vw;
+}
+.blog_title h1{
+    font-size: 3.5vw;
+    font-weight: 100;
+}
+.blog_info_container{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+.blog_info img{
+    width: 22.2em;
+}
+.blog_info{
+    padding: 1em;
+    border: solid 2.5px rgba(170, 170, 170, 0.219);
+    text-align: start;
+}
+.blog_info_socialmedia{
+    display: flex;
+    margin: 6px;
+    margin-bottom: 12px;
+}
+.icon_socialmedia{
+    margin: 1px 7px 0 -4px;
+}
+.blog_info h2{
+    margin: 10px -1px;
+    font-size: 23px;
+}
+
+.blog_info button{
+    margin-top: 25px;
+    padding: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: rgb(255, 255, 255);
+    color: #7ab063;
+    margin-right: 10px;
+    border: solid 3px #7ab063;
+}
+
+/* Novena Seccion*/
+
+#green_subscribe{
+    width: 100%;
+    height: 55vh;
+    /* */
+    /*Navegadores web viejos */
+    background: -webkit-linear-gradient(-45deg, rgba(57, 167, 47, 0.459) 50%,  rgba(47, 139, 39, 0.459) 50%), url(img/bg.png);
+    /*Navegadores normales*/
+    background: linear-gradient(-65deg, rgba(57, 167, 47, 0.459) 50%,  rgba(47, 139, 39, 0.459) 50%), url(img/bg.png);
+    /* */
+    background-size: cover
+}
+
+.subscribe{
+    text-align: center;
+}
+
+.subscribe_title h1{
+    color: black;
+    font-weight: 100;
+    font-size: 45px;
+    padding-top: 120px;
+}
+
+.subscribe_title p{
+    color: white;
+    margin-top: 10px;
+}
+
+.subscribe_title input{
+    margin-top: 50px;
+    width: 40vw;
+    height: 7vh;
+    background-color: rgba(255, 255, 255, 0.232);
+    border: 4px solid white;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.subscribe_title input::placeholder{
+    text-align: start;
+    font-size: 18px;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+}
+
+.subscribe_input i{
+    position: relative;
+    right: 50px;
+    top: -5px;
+}
+
+/*Sección 10*/
+
+.almostfooter{
+    height: 45vh;
+    width: 75%;
+    margin-top: 4em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5em;
+    place-items: center;
+    line-height: 3vh;
+}
+.almostfooter h1{
+    font-size: 2.5vw;
+    color: #7ab063;
+    margin-bottom: 20px;
+}
+
+
+.column1 *, .column2 *, .column3 *, .column4 *{
+    margin: 1vh 0 0 0;
+}
+
+.column3 *, .column4 *{
+    line-height: 4vh;
+}
+
+.column1, .column2 {
+    margin-bottom: 5.5vh;
+}
+
+.column1 h1, .column3 h2, .column4 h2{
+    margin-bottom: 2vh;
+}
+
+.almostfooter_new_york {
+    display: flex;
+    gap: 1vw;
+
+}
+
+.almostfooter_phone{
+    display: flex;
+    gap: 1vw;
+}
+
+.almostfooter_email{
+    display: flex;
+    gap: 1vw;
+}
+
+.almostfooter_info_socialmedia{
+    display: flex;
+    justify-content: start;
+    margin-left: 3px;
+    gap: 9px;
+    
+}
+
+.almostfooter_info_socialmedia *{
+    padding: 7px 10px 7px 10px;
+    border-radius: 100%;
+    outline: 2px solid #7ab063;
+}
+
+.fa-twitter{
+    padding: 7px;
+    border-radius: 100%;
+    outline: 2px solid #7ab063;
+}
+
+.fa-instagram{
+    padding: 7px 8px 7px 8px;
+    border-radius: 100%;
+    outline: 2px solid #7ab063;
+}
+
+.fa-linkedin-in{
+    padding: 7px 8px 7px 8px;
+    border-radius: 100%;
+    outline: 2px solid #7ab063;
+}
+
+.column3 ul li, .column4 ul li{
+    list-style: url(img/chevron-right-solid.svg);
+}
+
+.footer_info{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0 240px 0 240px;
+}
+
+
+footer hr{
+    border: 2px solid #7ab06321;
+    width: 75vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 15px;
+}
+
+.footer_info ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
